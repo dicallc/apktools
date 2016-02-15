@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LightParent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="theme_color">@color/colorPrimary</item>
+        <item name="theme_color_dark">@color/colorPrimaryDark</item>
+        <item name="theme_accent_color">@color/colorAccent</item>
+
+        <item name="ic_menu_export">@drawable/ic_exit_to_app_black_24dp</item>
+        <item name="ic_menu_detail">@drawable/ic_info_outline_black_24dp</item>
+        <item name="ic_menu_share">@drawable/ic_share_black_24dp</item>
+
+        <item name="appColorPrimary">@color/colorPrimary</item>
+        <item name="fits_windows">true</item>
+        <item name="alertDialogTheme">@style/AlertDialogCustom</item>
+
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+
+    <!-- 自定义Dialog显示风格 -->
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/md_white</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- NeutralButtonStyle -->
+        <item name="buttonBarNeutralButtonStyle">@style/buttonBarNeutral</item>
+        <!-- NegativeButtonStyle -->
+        <item name="buttonBarNegativeButtonStyle">@style/buttonBarNegative</item>
+        <!-- PositiveButtonStyle -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="buttonBarNegative"  parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/md_grey_700</item>
+    </style>
+    <style name="buttonBarNeutral"  parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/md_grey_700</item>
+    </style>
+</resources>
